@@ -11,8 +11,9 @@
 }
 
 .hero-secondary {
+    display: flex;
     font-size: 18px;
-    color: #E5E7EB;
+    color: #f9faf8;
 }
 
 .header {
@@ -21,7 +22,7 @@
 }
 
 button {
-    color: #E5E7EB;
+    color: #f9faf8;
     background-color: #3882F6;
     border-radius: 25px;
     padding: 10px;
@@ -29,17 +30,25 @@ button {
 }
 
 .information-header {
+    display: flex;
     font-size: 36px;
     font-weight: 700;
     color: #1F2937;
+    background-color: #f9faf8;
+    padding: 3vh;
 }
 
 blockquote {
-    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#E5E7EB;
     color: #1F2937;
     font-size: 36px;
     font-style: italic;
     font-weight: 300;
+    padding: 150px;
+    margin: 0;
 }
 
 /*Additional Styling*/
@@ -60,13 +69,19 @@ img {
     width: 100%
 }
 
+figcaption {
+    color: #E5E7EB;
+    text-align: center;
+    padding: 10px;
+}
+
 /*FLEXBOX*/
 /*Navigation*/
 .primary-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5em 15px 5em;
+    margin: 15px 8vh 15px 8vh;
 }
 
 .header-links {
@@ -79,7 +94,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 35px;
+    margin: 125px 5vh 125px 5vh;
 }
 
 .banner-one {
@@ -91,5 +106,55 @@ img {
 
 .banner-two {
     display: flex;
+    flex: 2 2 auto;
+    flex-direction: column;
     padding: 30px;
+}
+
+/*Information Block*/
+.information {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9faf8;
+}
+
+.information-images {
+    display: flex;
+    flex-direction: row;
+    margin: 0 15vh 15vh 15vh;
+    object-fit: cover;
+    background-color: #f9faf8;
+}
+
+.image-border {
+    border: 5px #3882F6 solid;
+    border-radius: 25px;
+}
+
+figure {
+    width: 100%;
+    background-color: #f9faf8;
+}
+
+.information-figcaption {
+    font-weight: 200;
+    color: #1F2937;
+    background-color: #f9faf8;
+}
+
+/*Quote*/
+
+/*Call To Action*/
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.thin {
+    font-weight: 200;
 }
